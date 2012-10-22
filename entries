@@ -1,0 +1,25 @@
+i1, name, firefox;
+i1, class, rm;
+i2, name, firefox;
+i2, class, run;
+i2, short, f;
+i3, name, facebook;
+i3, short, fb;
+i3, class, web;
+i4, name, google_maps;
+i4, short, map;
+i4, class, web;
+i5, name, twitter;
+i5, short, tw;
+i5, class, web;
+i5, rdf:type, menu_item;
+i4, rdf:type, menu_item;
+i3, rdf:type, menu_item;
+i2, rdf:type, menu_item;
+i1, rdf:type, menu_item;
+web, rdf:type, action;
+run, rdf:type, action;
+rm, rdf:type, action;
+web, proc, "q.delete(:class)\nprint query($db, q)";
+
+
